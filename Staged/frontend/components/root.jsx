@@ -1,11 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-class Root extends React.Component {
-  render () {
-    return (<div>
-              REACT IS WORKING
-            </div>)
-  }
+const Root = ({store}) => {
+  return (
+    <Provider store={store}>
+      <Router>
+
+      </Router>
+    </Provider>
+  )
 }
 
 export default Root;
