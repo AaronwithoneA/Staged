@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 const Root = ({store}) => {
   return (
     <Provider store={store}>
-      <Router>
+      <Router history={hashHistory}>
 
       </Router>
     </Provider>
