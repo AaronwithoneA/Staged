@@ -7,10 +7,14 @@ var UserSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  password: {
+  password_digest: {
     type: String,
     required: true,
   },
+  created_date: {
+    type: Date,
+    default: Date.now
+  }
 })
 
 var User = mongoose.model('User', UserSchema);
