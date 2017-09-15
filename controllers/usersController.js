@@ -22,7 +22,7 @@ exports.create_user = function(req, res) {
 exports.show_user = function(req, res) {
   User.findById(req.params.userId, function(err, result){
     if(err)
-      res.send(err):
+      res.send(err);
     res.json(result);
   })
 }

@@ -1,9 +1,9 @@
 {
   "name": "staged",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -15,12 +15,12 @@
     "connect-mongo": "^1.3.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
-    "express": "^4.14.1",
+    "express": "^4.15.4",
     "express-session": "^1.15.5",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.0.0",
     "mongodb": "^2.2.25",
-    "mongoose": "^4.11.10",
+    "mongoose": "^4.11.11",
     "monk": "^4.0.0",
     "morgan": "^1.7.0",
     "nodemon": "^1.12.0",
@@ -35,9 +35,19 @@
     "yarn": "^1.0.0"
   },
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Matt McGregor & Aron Cutler",
   "license": "ISC",
-  "description": ""
+  "description": "share live music",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mttmcgrgr/Staged.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mttmcgrgr/Staged/issues"
+  },
+  "homepage": "https://github.com/mttmcgrgr/Staged#readme"
 }
